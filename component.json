@@ -1,8 +1,8 @@
 {
-  "name": "pikaday",
-  "repo": "dbushell/Pikaday",
-  "description": "A refreshing JavaScript Datepicker — lightweight, no dependencies, modular CSS",
-  "version": "1.4.0",
+  "name": "friday-picker",
+  "repo": "gibson/friday-picker",
+  "description": "Friday picker - continued Pikaday",
+  "version": "1.0",
   "keywords": [
     "datepicker",
     "calendar",
@@ -12,6 +12,6 @@
   "scripts": ["pikaday.js"],
   "styles":  ["css/pikaday.css"],
   "dependencies": {},
-  "demo": "http://dbushell.github.io/Pikaday/",
+  "demo": "https://github.com/gibson/friday-picker",
   "license": "MIT"
 }
