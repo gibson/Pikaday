@@ -1,42 +1,35 @@
 {
   "name": "friday-picker",
-  "version": "1.0",
-  "description": "This is continued Pikaday",
-  "keywords": [
-    "datepicker",
-    "calendar",
-    "date",
-    "friday"
-  ],
-  "homepage": "https://github.com/gibson/friday-picker",
-  "bugs": "https://github.com/gibson/friday-picker/issues",
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://opensource.org/licenses/MIT"
-    }
-  ],
-  "main": "friday.js",
+  "version": "1.0.0",
+  "description": "Continued Pikday",
+  "main": "pikaday.js",
+  "directories": {
+    "example": "examples",
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "webpack": "^1.13.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gibson/friday-picker.git"
+    "url": "git+https://github.com/gibson/friday-picker.git"
   },
-  "optionalDependencies": {
-    "moment": "2.x"
+  "keywords": [
+    "calendar",
+    "friday",
+    "picker"
+  ],
+  "author": "Ivan Shishkin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gibson/friday-picker/issues"
   },
-  "devDependencies": {
-    "mocha": "~1.18.2",
-    "expect.js": "^0.3.1"
-  },
-  "testling": {
-    "harness": "mocha",
-    "files": "tests/*.js",
-    "browsers": [
-      "ie/7..latest",
-      "chrome/latest",
-      "firefox/3.6", "firefox/latest",
-      "safari/latest",
-      "opera/latest"
-    ]
-  }
+  "homepage": "https://github.com/gibson/friday-picker#readme"
 }
