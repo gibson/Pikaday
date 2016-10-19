@@ -1,7 +1,7 @@
 var Pikaday = require('../'),
     expect = require('expect.js');
 
-describe('Pikaday public method', function ()
+describe('Friday public method', function ()
 {
     'use strict';
 

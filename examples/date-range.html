@@ -48,7 +48,7 @@
             startPicker.setMaxDate(endDate);
             endPicker.setEndRange(endDate);
         },
-        startPicker = new Pikaday({
+        startPicker = new Friday({
             field: document.getElementById('start'),
             minDate: new Date(),
             maxDate: new Date(2020, 12, 31),
@@ -57,7 +57,7 @@
                 updateStartDate();
             }
         }),
-        endPicker = new Pikaday({
+        endPicker = new Friday({
             field: document.getElementById('end'),
             minDate: new Date(),
             maxDate: new Date(2020, 12, 31),

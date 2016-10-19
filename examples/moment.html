@@ -33,7 +33,7 @@
     <script>
 
     // You can get and set dates with moment objects
-    var picker = new Pikaday(
+    var picker = new Friday(
     {
         field: document.getElementById('datepicker'),
         firstDay: 1,
@@ -45,9 +45,9 @@
             document.getElementById('selected').appendChild(date);
         }
     });
-    
+
     picker.setMoment(moment().dayOfYear(366));
-    
+
     </script>
 </body>
 </html>

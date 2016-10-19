@@ -1,7 +1,7 @@
 var path       = require("path");
 module.exports = {
     entry:   {
-        pikaday: "pikaday"
+        Friday: "pikaday"
     },
     module:  {
         loaders: [
@@ -29,15 +29,16 @@ module.exports = {
         ]
     },
     babel:   {
-        presets: ["es2015"]
+        presets: ["es2015", 'stage-2']
     },
     resolve: {
         extensions:         ['', '.js'],
         modulesDirectories: ['src', 'node_modules']
     },
+    devtool: 'source-map',
     output:  {
         path:          "./dist",
-        filename:      "[name].js",
+        filename:      "friday.js",
         library:       ["[name]"],
         libraryTarget: "umd"
     }

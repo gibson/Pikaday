@@ -1,7 +1,7 @@
 var Pikaday = require('../'),
     expect = require('expect.js');
 
-describe('Pikaday', function ()
+describe('Friday', function ()
 {
     'use strict';
 

@@ -5,10 +5,16 @@
     <title>Index page</title>
 </head>
 <body>
-
-<script src='../dist/pikaday.js' async></script>
+<div id="test"></div>
+<script src='../dist/friday.js'></script>
 <script type='text/javascript'>
-
+    var c = null;
+    document.addEventListener('DOMContentLoaded', function () {
+        c = new Friday();
+        var dev = document.querySelector('#test');
+        console.log(c.getElement());
+        dev.appendChild(c.getElement());
+    }, false);
 </script>
 </body>
 </html>

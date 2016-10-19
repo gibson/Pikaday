@@ -41,3 +41,7 @@ export function compareDates(a, b) {
     // weak date comparison (use setToStartOfDay(date) to ensure correct result)
     return a.getTime() === b.getTime();
 }
+
+export function getRandomString() {
+    return Math.random().toString(36).substr(2, 10);
+}
