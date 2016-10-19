@@ -587,7 +587,7 @@
         addEvent(self.el, 'mousedown', self._onMouseDown, true);
         addEvent(self.el, 'touchend', self._onMouseDown, true);
         addEvent(self.el, 'change', self._onChange);
-        addEvent(document, 'keydown', self._onKeyChange);
+        addEvent(self.el, 'keydown', self._onKeyChange);
 
         if (opts.field) {
             if (opts.container) {
