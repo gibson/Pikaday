@@ -20,7 +20,7 @@ export function isDate(obj) {
     return (/Date/).test(Object.prototype.toString.call(obj)) && !isNaN(obj.getTime());
 }
 export function isWeekend(date) {
-    var day = date.getDay();
+    let day = date.getDay();
     return day === 0 || day === 6;
 }
 
@@ -33,12 +33,12 @@ export function getDaysInMonth(year, month) {
     return [31, isLeapYear(year) ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31][month];
 }
 
-export function setToStartOfDay(date) {
+export function rewindToStartOfDay(date) {
     if (isDate(date)) date.setHours(0, 0, 0, 0);
 }
 
 export function compareDates(a, b) {
-    // weak date comparison (use setToStartOfDay(date) to ensure correct result)
+    // weak date comparison (use rewindToStartOfDay(date) to ensure correct result)
     return a.getTime() === b.getTime();
 }
 

@@ -1,7 +1,7 @@
 var path       = require("path");
 module.exports = {
     entry:   {
-        Friday: "pikaday"
+        Friday: "./src/friday"
     },
     module:  {
         loaders: [
