@@ -30,6 +30,9 @@
 {
     'use strict';
 
+    if (typeof(window) == 'undefined'){
+        global.window = new Object();
+    }
     /**
      * feature detection and helper functions
      */
